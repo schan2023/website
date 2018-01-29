@@ -1,0 +1,151 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,700');
+@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light');
+
+
+
+body {
+    /* font-family: 'Work Sans', sans-serif; */
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font weight: 300;
+    color: #555;
+    margin: 0;
+    padding: 0;
+}
+
+#page {
+    max-width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* TEXT */
+h1 { font-family: 'Shadows Into Light', cursive; margin: 0 0 0.2em 0; font-size: 9em; font-weight: 600; padding-top: 20px; padding-left: 55px; }
+h2 { font-size: 2em; font-weight: 600; line-height: 1.1em; padding-left: 30px; }
+h3 { font-size: 1.5em; font-weight: 500; }
+h4 { font-size: 1.3em; font-weight: 400; font-style: italic;}
+p { font-size: 1em; }
+ul { list-style-type: none; }
+
+header {
+    background-size: cover;
+    background-color: #2A2C39;
+    height: 100vh;
+    color: #fff;
+}
+
+#flip {
+    height:50px;
+    overflow:hidden;
+    font-size: 2em;
+    padding-left: 40px;
+}
+
+#flip > div > div {
+  color:#fff;
+  padding:4px 12px;
+  height:45px;
+  margin-bottom:45px;
+  display:inline-block;
+}
+
+#flip div:first-child {
+  animation: show 7s linear infinite;
+}
+
+#flip div div {
+  background:#2A2C39;
+}
+#flip div:first-child div {
+  background:#2A2C39;
+}
+#flip div:last-child div {
+  background:#2A2C39;
+}
+
+@keyframes show {
+  0% {margin-top:-270px;}
+  5% {margin-top:-180px;}
+  33% {margin-top:-180px;}
+  38% {margin-top:-90px;}
+  66% {margin-top:-90px;}
+  71% {margin-top:0px;}
+  99.99% {margin-top:0px;}
+  100% {margin-top:-270px;}
+}
+
+header h1 { color: #FF4056; padding-left: 60px; }
+header ul { font-size: 1.1em }
+header li { margin: 0 0 10px 0; }
+
+header aside {
+    width: 50%;
+    margin: 50px 0 50px 0;
+    padding-top: 180px;
+    float: left;
+    text-align: center;
+}
+
+.about {
+    padding-left: 60px;
+    padding-top: 10px;
+}
+
+img.self {
+    border-radius: 300px;
+    opacity: 0.9;
+}
+
+/* SECTION - ALL */
+
+section {
+    padding: 40px 80px 40px 80px;
+    height: 500px;
+}
+
+/* SECTION - WORK  */
+section.work aside {
+    width: 50%;
+    float: right;
+}
+
+section.work .content {
+    padding: 0 40px 50px 50px;
+}
+
+section.work img.ultimate { float: left; padding: 30px 30px 30px 30px; }
+section.work img.swamphacks { float: left; padding: 30px 30px 30px 30px; }
+
+/* SECTION - SKILLS */
+section.skills {
+    background-color: #2A2C39;
+    color: #fff;
+    height: 210px;
+}
+
+section.skills h3 { color: #FF4056; padding-left: 30px; }
+section.skills aside {
+    width: 33%;
+    float: left;
+    text-align: center;
+}
+
+section.skills ul { font-size: 1.1em }
+section.skills li { margin: 0 0 10px 0; }
+
+/* SECTION - ICONS */
+section.icons { height: 130px; background-color: #2A2C39; }
+section.icons .icon-div { padding-left: 40px; }
+section.icons aside {
+    width: 33%;
+    float: left;
+    text-align: center;
+}
+
+/* SECTION - PROJECTS */
+section.portfolio { height: 500px; }
+section.portfolio aside { width: 33%; padding-left: 700px; height: 250px; }
+section.portfolio aside.content.p1 { background-image: url(../images/filler.jpg); background-repeat: no-repeat;}
+
+/* section.work aside.first { float: right; } */
